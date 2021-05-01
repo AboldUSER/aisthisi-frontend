@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import {Fragment} from 'react'; 
+import { Fragment } from 'react';
 import ScrollToTop from './hooks/ScrollToTop';
 import Header from './components/header';
 import HomePage from './pages/homepage';
@@ -17,8 +17,8 @@ const theme = createMuiTheme({
           background: 'rgb(255,255,255)',
           background: 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,247,249,1) 35%, rgba(237,239,243,1) 100%)',
           margin: 0,
-  /* background-color: #E6E9EF; */
-  fontFamily: 'Titillium Web'
+          /* background-color: #E6E9EF; */
+          fontFamily: 'Titillium Web'
         },
       },
     },
@@ -28,24 +28,24 @@ const theme = createMuiTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-    <CssBaseline />
-    <div className="App">
-      <Router>
-        <Header />
-        <Fragment>
-        <ScrollToTop />
-        <Switch>
-          <Route exact path='/'>
-            <HomePage />
-          </Route>
-          <Route exact path='/artists'>
-            <ArtistsPage />
-          </Route>
-        </Switch>
-        </Fragment>
-        <Footer />
-      </Router>
-    </div>
+      <CssBaseline />
+      <div className="App">
+        <Router>
+          <Header />
+          <Fragment>
+            <ScrollToTop />
+            <Switch>
+              <Route exact path='/'>
+                <HomePage />
+              </Route>
+              <Route exact path='/artists'>
+                <ArtistsPage />
+              </Route>
+            </Switch>
+          </Fragment>
+          <Footer />
+        </Router>
+      </div>
     </ThemeProvider>
   );
 }

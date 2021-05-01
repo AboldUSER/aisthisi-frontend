@@ -16,29 +16,29 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Fade from '@material-ui/core/Fade';
 
 function ElevationScroll(props) {
-    const { children, window } = props;
+  const { children, window } = props;
 
-    const trigger = useScrollTrigger({
-      disableHysteresis: true,
-      threshold: 0,
-      target: window ? window() : undefined,
-    });
-  
-    return React.cloneElement(children, {
-      elevation: trigger ? 4 : 0,
-    });
-  }
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 0,
+    target: window ? window() : undefined,
+  });
 
-  function debounce(fn, ms) {
-    let timer
-    return _ => {
-      clearTimeout(timer)
-      timer = setTimeout(_ => {
-        timer = null
-        fn.apply(this, arguments)
-      }, ms)
-    };
-  }
+  return React.cloneElement(children, {
+    elevation: trigger ? 4 : 0,
+  });
+}
+
+function debounce(fn, ms) {
+  let timer
+  return _ => {
+    clearTimeout(timer)
+    timer = setTimeout(_ => {
+      timer = null
+      fn.apply(this, arguments)
+    }, ms)
+  };
+}
 
 const StyledHeader = styled(AppBar)`
   display: flex;
@@ -73,79 +73,77 @@ const StyledLogoWrapper = styled.div`
       `;
 
 
-// let windowWidth = window.innerWidth;
-
 const SetMenu = () => {
 
-const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = React.useState(null);
 
-const open = Boolean(anchorEl);
+  const open = Boolean(anchorEl);
 
-const handleClick = (event) => {
-      setAnchorEl(event.currentTarget);
-};
-    
-const handleClose = () => {
-      setAnchorEl(null);
-};
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   if (window.innerWidth > 600) {
     return (
       <Fade in={true} timeout={500}>
-      <SiteNav >
-            <SiteNavLink exact to='/' style={{ textDecoration:'none'}}>
-              <Typography style={{ fontFamily: 'Titillium Web', color: '#f8f9fa', margin: '10px', textDecoration:'none' }} variant='subtitle1'>Concept</Typography>
-            </SiteNavLink>
-            <SiteNavLink exact to='/artists' style={{ textDecoration:'none'}}>
-              <Typography style={{ fontFamily: 'Titillium Web', color: '#f8f9fa', margin: '10px', textDecoration:'none' }} variant='subtitle1'>Artists</Typography>
-            </SiteNavLink>
-            <IconButton href='https://twitter.com/aisthisi_nft' target='_blank' style={{ color: '#f8f9fa'}}>
-              <TwitterIcon />
-            </IconButton>
-            </SiteNav>
-            </Fade>
+        <SiteNav >
+          <SiteNavLink exact to='/' style={{ textDecoration: 'none' }}>
+            <Typography style={{ fontFamily: 'Titillium Web', color: '#f8f9fa', margin: '10px', textDecoration: 'none' }} variant='subtitle1'>Concept</Typography>
+          </SiteNavLink>
+          <SiteNavLink exact to='/artists' style={{ textDecoration: 'none' }}>
+            <Typography style={{ fontFamily: 'Titillium Web', color: '#f8f9fa', margin: '10px', textDecoration: 'none' }} variant='subtitle1'>Artists</Typography>
+          </SiteNavLink>
+          <IconButton href='https://twitter.com/aisthisi_nft' target='_blank' style={{ color: '#f8f9fa' }}>
+            <TwitterIcon />
+          </IconButton>
+        </SiteNav>
+      </Fade>
     )
   } else {
     return (
       <div>
-      <Fade in={true} timeout={500}>
-      <IconButton
-        aria-label="more"
-        aria-controls="long-menu"
-        aria-haspopup="true"
-        onClick={handleClick}
-        style={{ color: '#f8f9fa'}}
-      >
-        <MoreVertIcon color='#F8F9FA' backgroundColor='#F8F9FA'/>
-      </IconButton>
-      </Fade>
-      <Menu
-        id="fade-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={open}
-        onClose={handleClose}
-        TransitionComponent={Fade}
-      >
-        <MenuItem onClick={handleClose} component={NavLink} to="/">
-          <Typography style={{ fontFamily: 'Titillium Web', margin: '10px' }} variant='subtitle1'>
-            Concept
+        <Fade in={true} timeout={500}>
+          <IconButton
+            aria-label="more"
+            aria-controls="long-menu"
+            aria-haspopup="true"
+            onClick={handleClick}
+            style={{ color: '#f8f9fa' }}
+          >
+            <MoreVertIcon color='#F8F9FA' backgroundColor='#F8F9FA' />
+          </IconButton>
+        </Fade>
+        <Menu
+          id="fade-menu"
+          anchorEl={anchorEl}
+          keepMounted
+          open={open}
+          onClose={handleClose}
+          TransitionComponent={Fade}
+        >
+          <MenuItem onClick={handleClose} component={NavLink} to="/">
+            <Typography style={{ fontFamily: 'Titillium Web', margin: '10px' }} variant='subtitle1'>
+              Concept
           </Typography>
-        </MenuItem>
-        <MenuItem onClick={handleClose} component={NavLink} to="/artists">
-          <Typography style={{ fontFamily: 'Titillium Web',  margin: '10px' }} variant='subtitle1'>
-            Artists
+          </MenuItem>
+          <MenuItem onClick={handleClose} component={NavLink} to="/artists">
+            <Typography style={{ fontFamily: 'Titillium Web', margin: '10px' }} variant='subtitle1'>
+              Artists
           </Typography>
-        </MenuItem>
-      </Menu>
-    </div>
+          </MenuItem>
+        </Menu>
+      </div>
     )
   }
 }
 
 const Header = (props) => {
 
-  const [dimensions, setDimensions] = React.useState({ 
+  const [dimensions, setDimensions] = React.useState({
     width: window.innerWidth
   })
   React.useEffect(() => {
@@ -159,27 +157,28 @@ const Header = (props) => {
 
     return _ => {
       window.removeEventListener('resize', debouncedHandleResize)
-    
-}
+
+    }
   })
 
- return (
-      <ElevationScroll {...props}>
+  return (
+    <ElevationScroll {...props}>
       <StyledHeader style={{ background: '#68bdce' }} zIndex="tooltip">
         <Toolbar>
-        <Box display='flex' flexGrow={80}>
-            
+          <Box display='flex' flexGrow={80}>
+
             <Link exact to='/'>
-              <StyledLogoWrapper ><Logo/></StyledLogoWrapper>
+              <StyledLogoWrapper ><Logo /></StyledLogoWrapper>
             </Link>
-            <Link style={{ margin: 'auto 0', textDecoration:'none' }} href='/'>
-            <Typography style={{ fontFamily: 'Titillium Web', color: '#f8f9fa', fontSize: 30, fontWeight: 'bold' }} variant='subtitle1'>Aisthisi</Typography>
+            <Link style={{ margin: 'auto 0', textDecoration: 'none' }} href='/'>
+              <Typography style={{ fontFamily: 'Titillium Web', color: '#f8f9fa', fontSize: 30, fontWeight: 'bold' }} variant='subtitle1'>Aisthisi</Typography>
             </Link>
-        </Box>
-        <SetMenu />
+          </Box>
+          <SetMenu />
         </Toolbar>
       </StyledHeader>
-      </ElevationScroll>
-)}
+    </ElevationScroll>
+  )
+}
 
 export default Header;

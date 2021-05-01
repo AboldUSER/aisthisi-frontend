@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
     padding: theme.spacing(1, 1, 1),
-    color:'#1D2E4E'
+    color: '#1D2E4E'
   },
   heading: {
     fontSize: theme.typography.pxToRem(20),
