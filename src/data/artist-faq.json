@@ -1,30 +1,49 @@
-{"ArtistFaqArray" : [
-    {"question": "How long does olive oil last in a bottle?",
-    "answer": "This unfiltered olive oil will generally last 1 year before the taste begins to degrade. Unfiltered olive oil is meant to be enjoyed sooner rather than later!"},
-    {"question": "Can I get more information on this unfiltered olive oil?",
-    "answer": "It’s called “Omphakinon”, and it is a tradtional recipe that uses olives before they mature, when they are still unripe and green. The olives are harvested early in mid-October, picked from the trees by hand and processed within 24 hours."},
-    {"question": "Royalties included back to us if the NFT is sold again?",
-    "answer": "As NFT marketplaces generally pay out royalties directly to the minter’s address in a consolidated manner (i.e., conduct payouts weekly/monthly), we are tracking royalties manually and these royalties are subject to the same revenue share as the auction revenue (33%) and will be paid out monthly. There will be a minimum threshold to be reached of $50 to account for current gas fees."},
-    {"question": "Have you held auctions before?",
-    "answer": "Yes, we have created and auctioned mostly ENS domains as NFTs. We’ve also participated in NFT auctions."},
-    {"question": "Can we change the bottle shape? Material? ",
-    "answer": "The artist can choose between a stainless steel bottle or a glass bottle. Note that olive oil will degrade by UV light, particularly unfiltered olive oil. Also note that the logistics of this project require us to transport the glass bottles from Austria to Greece, and the village is not as developed (i.e., dirt roads), hence greater care will be needed by us to ensure they do not break during transport and handling."},
-    {"question": "What about doing multiple bottles of each artists’ design?",
-    "answer": "We only have at most 14 liters or 28 500ml bottles of olive oil (if we end up with 100% throughput and neglect any buffer). We are conducting a hand harvesting operation (e.g., no industrial tools) and can logistically only harvest at most 100kg of olives (~14 liters of oil), without hiring more help. As these are 500ml bottles, there would only be enough for the 10 bottles auctioned and provide each artist with a bottle. Since this is a traditional, hand harvesting process and operation, it is not very feasible to do much more. That is also why these are so rare!"},
-    {"question": "Can we artists get a bottle of the olive oil?",
-    "answer": "Yes, this is possible! Each artist will get a bottle of delicious, traditional olive oil shipped to them if needed! This will not include NFT work or signatures, only the oil itself."},
-    {"question": "Who is filming / editing? Do we have any creative say in the video production?",
-    "answer": "Thomas Wiesner will be filming and plans to edit, and he has filming experience based on his various online classes and additional video projects. He will have three different cameras, including a Sony A7c, Zv-1, lenses, and respective equipment such as tripods and mics. Everything will be produced in at least 1080p (potentially 4k). The idea is to film key aspects of the entire process, so both close ups of the harvesting and landscape shots of the area, as well as documentary style interviews with the orchard owner. This is a remote and not very developed location, so it would not be very easy to send large files over bad internet connection, hence the current idea is to do the filming and editing on site, and then be able to quickly upload it online and to the NFTs’metadata once back in a place with better infrastructure. With all that said, of course open to hear other ideas."},
-    {"question": "Can we choose the NFT marketplace for our NFT auction?",
-    "answer": "So far we are thinking of potentially Mintable, as we have a close relationship with the Mintable team, and they have already agreed to help us in terms of social media marketing and providing advertising credits on the website itself (i.e., front page). If artists have other suggestions then happy to hear them too. I do think it is better for the project to hold all NFT auctions on one marketplace to more easily build recognition and consistency. Additionally, marketplaces like OpenSea are aggregators, meaning they also show all NFTs such as those created by Rarible or just held in people’s wallets. So no matter what marketplace we choose to hold an auction on, the NFT will also show up on these NFT aggregator marketplaces too."},
-    {"question": "Can you share the min size of the QR code and the size of the nutritional label?",
-    "answer": "We can share more information on the QR code after we hear back from the printing company in the coming days. Upon further research, the nutritional label actually doesn’t have to be on the bottle itself as we are not selling in retail stores. It can be put on a card or booklet shipped with the bottle, so this gives the artist the full bottle space to work with."},
-    {"question": "Will you pass the costs incurred transparently back to us (ie receipts of the vendors of the bottle or printing labels)?",
-    "answer": "As the costs incurred are not estimated to be much, we have decided that they will just come out of the share by Martin and Thomas. Hence the artist will get the full ⅓ portion of whatever the NFT is auctioned for. Since costs will not impact the gross revenue provided by the artist, we don’t really see a need to share this, but can do so if requested."},
-    {"question": "Is there a theme for the artist?",
-    "answer": "We do not have any particular theme for the artists. We hope that each artist will come with their unique styles and background to find inspiration in this unique type of project. You are not limited to creating pieces about olives or oil."},
-    {"question": "Should Omphakinon be advertised specifically on the bottle?",
-    "answer": "If the artist chooses to include it in the art piece then sure! We will also include it in the nutritional label that can be included as a separate card/booklet to the piece."},
-    {"question": "Can we make several Editions per art piece (e.g., NFT #1 has more editions to it)?",
-    "answer": "This is an idea we are still exploring. Potentially creating multiple prints of the same art piece, and only the first one comes with a bottle. Considerations are: would this diminish the rarity and value of the single piece, and would the market react well to this? How does this impact the single erc721 contract with multiple editions of 10 different pieces?"}
-]}
+{
+    "ArtistFaqArray": [
+        {
+            "question": "How can I let you know I'm interested in collaborating?",
+            "answer": "Reach out to us on our Twitter or our Discord! We have much more info to share with those interested!"
+        },
+        {
+            "question": "Overall, what is expected of an artist?",
+            "answer": "Design an art piece that will be used as a label for the bottle of olive oil, and either the same or similar digital piece to be included with the NFT."
+        },
+        {
+            "question": "Is there a specific theme or art medium for the artist?",
+            "answer": "We hope that each artist will come with their unique style, background and speciality to find inspiration in this unique type of project. You are not limited to creating pieces about olives or oil. Although the labels are static images, the digital pieces can be as dynamic as you want!"
+        },
+        {
+            "question": "When are these NFTs and bottles of olive oil expected to drop?",
+            "answer": "The olive oil harvest takes place in October 2021, and bottles will be shipped by end of that month. The auction will take place ten weeks preceding October 1st, 2021. The first NFT auction will be held on July 23rd, 2021. Every week another artists' NFT will be listed for auction."
+        },
+        {
+            "question": "Is there a deadline for providing art?",
+            "answer": "The digital art piece as well as the physical label design must be finished by the beginning of July 2021. "
+        },
+        {
+            "question": "How will proceeds from the NFT auctions be shared?",
+            "answer": "Proceeds will be split three ways - 1/3 going to the artist and 1/3 each going to the two technical team members"
+        },
+        {
+            "question": "Will costs impact the proceeds to the artist?",
+            "answer": "No. As the costs incurred are not estimated to be much, we have decided that they will just come out of the share by the two technical team members. Hence the artist will get the full ⅓ portion of whatever the NFT is auctioned for."
+        },
+        
+        {
+            "question": "Are royalties included back to artists if the NFT is sold again?",
+            "answer": "As NFT marketplaces generally pay out royalties directly to the minter’s address in a consolidated manner (i.e., conduct payouts weekly/monthly), we are tracking royalties manually and these royalties are subject to the same revenue share as the auction revenue (33%) and will be paid out monthly. There will be a minimum threshold to be reached of $50 to account for current gas fees."
+        },
+        {
+            "question": "What about doing multiple bottles of each artists’ design?",
+            "answer": "We only have at most 14 liters or 28 500ml bottles of olive oil (if we end up with 100% throughput and neglect any buffer). We are conducting a hand harvesting operation (e.g., no industrial tools) and can logistically only harvest at most 100kg of olives (~14 liters of oil), without hiring more help. As these are 500ml bottles, there would only be enough for the 10 bottles auctioned and provide each artist with a bottle. Since this is a traditional, hand harvesting process and operation, it is not very feasible to do much more. That is also why these are so rare!"
+        },
+        {
+            "question": "Can artists get a bottle of olive oil?",
+            "answer": "Yes! Each artist will get a bottle of delicious, traditional olive oil shipped to them if needed! This will not include NFT work or signatures, only the oil itself."
+        },
+        {
+            "question": "Can I get more information on this delicious traditional olive oil?",
+            "answer": "It’s called “Omphakinon”, and it is a traditional recipe that uses olives before they mature, when they are still unripe and green. The olives are harvested early in mid-October, picked from the trees by hand and processed within 24 hours."
+        }
+    ]
+}

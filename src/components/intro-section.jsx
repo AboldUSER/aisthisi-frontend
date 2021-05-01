@@ -13,7 +13,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 const useStyles = makeStyles((theme) => ({
   root: {
     // width: '95%',
-    padding: theme.spacing(20, 0, 0)
+    padding: theme.spacing(20, 0, 5)
   },
   text: {
     color: '#1D2E4E',
