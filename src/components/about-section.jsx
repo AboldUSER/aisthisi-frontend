@@ -1,6 +1,6 @@
   
 import React from 'react';
-import { Grid, makeStyles, Container } from '@material-ui/core';
+import { Grid, makeStyles } from '@material-ui/core';
 import Art from '../images/stock-art.jpeg';
 import Crypto from '../images/stock-crypto.jpeg';
 import Olive from '../images/stock-olive.jpeg';
@@ -9,50 +9,48 @@ import SimpleCard from './card';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      flexGrow: 1,
+      // flexGrow: 1,
       textAlign: 'center',
       padding: theme.spacing(10, 5, 10),
       color: '#131C46',
     },
-
   }));
 
-function AboutSection() {
+const AboutSection = () => {
     const classes = useStyles();
-    ;
+    
     return (
-        <Container maxWidth="lg">
-        <div className={classes.root}>
-        {/* <h1 style={{marginBottom: 50}}>Benefits of xLiquidity</h1> */}
-      <Grid container spacing={10}>
-      <Grid item xs>
-<SimpleCard
+      <Grid container className={classes.root} style={{margin:'auto', maxWidth:1300}}>
+      {/* <Grid container  style={{margin:'auto', backgroundColor:'white'}}> */}
+      <Grid item xs align="center" style={{margin:'20px'}}>
+<SimpleCard m={50} style={{margin:'500px'}}
   imageText={'Art'}
   imageUrl={Art}
   title={'ART'}
-  text={'10 artists from around the world are designing pieces that will be the physical label for the bottle and an accompanying digital asset \n Each bottle is unique'}
+  text1={'10 artists from around the world are designing pieces that will be the physical label for the bottle and an accompanying digital asset'}
+  text2={'Each bottle is unique'}
 />
 </Grid>
-<Grid item xs>
+<Grid item xs align="center" style={{margin:'20px'}}>
 <SimpleCard
   imageText={'Crypto'}
   imageUrl={Crypto}
   title={'BLOCKCHAIN'}
-  text={'Each bottle is represented on the Ethereum blockchain by an NFT that allows the owner to claim delivery & ownership of the bottle, access the digital art, and access a personalized video capturing the experience of a traditional harvest'}
+  text1={'Each bottle is represented on the Ethereum blockchain by an NFT that allows the owner to claim delivery & ownership of the bottle, access the digital art, and access a personalized video capturing the experience of a traditional harvest'}
+  text2={''}
 />
 </Grid>
-<Grid item xs>
+<Grid item xs align="center" style={{margin:'20px'}}>
 <SimpleCard
   imageText={'Olive Oil'}
   imageUrl={Olive}
   title={'OLIVE OIL'}
-  text={'Harvested from an orchard containing 300 year old olive trees in the region of Messinia, Greece \n Certified organic extra-virgin crafted by traditional cold-press technique'}
+  text1={'Harvested from an orchard containing 300 year old olive trees in the region of Messinia, Greece'}
+  text2={'Certified organic extra-virgin crafted by traditional cold-press technique'}
 />
 </Grid>
+      {/* </Grid> */}
       </Grid>
-      
-      </div>
-      </Container>
     )
 }
 

@@ -13,6 +13,10 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: '70%',
   },
+  text: {
+    color:'#1D2E4E',  
+    fontFamily:'Titillium Web'
+  }
 }));
 
 const IntroSection = () => {
@@ -21,33 +25,33 @@ const IntroSection = () => {
   return (
     <Container className={classes.root}>
       <Paper elevation={3}>
-        <Typography variant="h6" >
+        <Typography className={classes.text} variant="h6" style={{ fontSize:30, padding:'10px 25px 0', textAlign:'left'}} >
             The Idea
           </Typography>
           <div >
             <List >
-                <ListItem>
+                <ListItem alignItems="flex-start">
                   <ListItemIcon>
-                    <ArrowRightRoundedIcon fontSize="small" />
+                    <ArrowRightRoundedIcon style={{ color:'#1D2E4E' }}/>
                   </ListItemIcon>
-                  <ListItemText
-                    primary="Aisthisi is an experiment to create a physical and digital experience by combining the creativity of art, the immutability of blockchain, and the delicacy of organic Greek olive oil"
+                  <ListItemText className={classes.text}
+                    primary={<Typography type="body2" style={{ fontSize:20, color:'#1D2E4E', fontFamily:'Titillium Web' }}>Aisthisi is an experiment to create a physical and digital experience by combining the creativity of art, the immutability of blockchain, and the delicacy of organic Greek olive oil</Typography>}
                   />
                 </ListItem>
-                <ListItem>
+                <ListItem alignItems="flex-start">
                   <ListItemIcon>
-                    <ArrowRightRoundedIcon fontSize="small" />
+                    <ArrowRightRoundedIcon style={{ color:'#1D2E4E' }} />
                   </ListItemIcon>
-                  <ListItemText
-                    primary="Each bottle will have its own unique printed art design, a digital version of the design, a video of the harvest & bottling experience, and contain certified organic extra-virgin olive oil"
+                  <ListItemText disableTypography
+                    primary={<Typography type="body2" style={{ fontSize:20, color:'#1D2E4E', fontFamily:'Titillium Web' }}>Each bottle will have its own unique printed art design, a digital version of the design, a video of the harvest & bottling experience, and contain certified organic extra-virgin olive oil</Typography>}
                   />
                 </ListItem>
-                <ListItem>
+                <ListItem alignItems="flex-start">
                   <ListItemIcon>
-                    <ArrowRightRoundedIcon fontSize="small" />
+                    <ArrowRightRoundedIcon style={{ color:'#1D2E4E' }} />
                   </ListItemIcon>
-                  <ListItemText
-                    primary="Only ten bottles will exist, each designed by a different artist, available via auction"
+                  <ListItemText className={classes.text}
+                    primary={<Typography type="body2" style={{ fontSize:20, color:'#1D2E4E', fontFamily:'Titillium Web' }}>Only ten bottles will exist, each designed by a different artist, available via auction</Typography>}
                   />
                 </ListItem>
             </List>

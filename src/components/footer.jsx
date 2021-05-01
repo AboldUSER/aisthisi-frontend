@@ -8,11 +8,12 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
       textAlign: 'center',
       padding: theme.spacing(5, 10, 1),
-      backgroundColor: '#7B9B91',
-      color: '#fff',
+      backgroundColor: '#68BDCE',
+      color: '#f8f9fa'
     },
     copyright: {
-      padding: theme.spacing(5, 0, 0),
+      padding: theme.spacing(4, 0, 2),
+      color: '#f8f9fa'
     },
   }));
 
@@ -22,7 +23,7 @@ function Footer() {
     return (
 
         <div className={classes.root}>
-      <Grid container spacing={1}>
+      <Grid container >
         <Grid item md>
 <h1>Join our community to stay updated</h1>
 <Container maxWidth="sm">
@@ -40,9 +41,6 @@ function Footer() {
     </Grid>
 </Container>
 </Grid>
-{/* <Grid item md>
-        <img src={logo} width="30%" />
-        </Grid> */}
       </Grid>
       <p className={classes.copyright}>Aisthisi Copyright ⓒ {year}</p>
       </div>

@@ -45,7 +45,6 @@ const SiteNav = styled.div`
 `;
 
 const SiteNavLink = styled(Link).attrs({ component: NavLink })`
-  color: "#ffffff";
   text-transform: uppercase;
   &.active {
     h6 {
@@ -65,7 +64,7 @@ const StyledLogoWrapper = styled.div`
 function Header(props) {
   return (
       <ElevationScroll {...props}>
-      <StyledHeader style={{ background: '#3d5687' }} zIndex="tooltip">
+      <StyledHeader style={{ background: '#68bdce' }} zIndex="tooltip">
       {/* <AppBar> */}
         <Toolbar>
         <Box display='flex' flexGrow={80}>
@@ -74,17 +73,17 @@ function Header(props) {
               <StyledLogoWrapper ><Logo/></StyledLogoWrapper>
             </Link>
             <Link style={{ margin: 'auto 0' }} href='/'>
-            <Typography style={{ color: 'white' }} variant='subtitle1'>Aisthisi</Typography>
+            <Typography style={{ fontFamily: 'Titillium Web', color: '#f8f9fa', fontSize: 30, fontWeight: 'bold' }} variant='subtitle1'>Aisthisi</Typography>
             </Link>
         </Box> 
             <SiteNav >
             <SiteNavLink exact to='/'>
-              <Typography style={{ color: '#ffffff', margin: '10px' }} variant='subtitle1'>Concept</Typography>
+              <Typography style={{ fontFamily: 'Titillium Web', color: '#f8f9fa', margin: '10px' }} variant='subtitle1'>Concept</Typography>
             </SiteNavLink>
             <SiteNavLink exact to='/artists'>
-              <Typography style={{ color: '#ffffff', margin: '10px' }} variant='subtitle1'>Artists</Typography>
+              <Typography style={{ fontFamily: 'Titillium Web', color: '#f8f9fa', margin: '10px' }} variant='subtitle1'>Artists</Typography>
             </SiteNavLink>
-            <IconButton href='https://twitter.com/aisthisi_nft' target='_blank' style={{ color: 'white'}}>
+            <IconButton href='https://twitter.com/aisthisi_nft' target='_blank' style={{ color: '#f8f9fa'}}>
               <TwitterIcon />
             </IconButton>
             </SiteNav>

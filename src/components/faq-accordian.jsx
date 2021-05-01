@@ -10,12 +10,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
     padding: theme.spacing(1, 1, 1),
+    color:'#1D2E4E'
   },
   heading: {
     fontSize: theme.typography.pxToRem(20),
-    // flexBasis: '33.33%',
-    // flexShrink: 0,
-  },
+  }
 }));
 
 export default function FAQAccordian(props) {
@@ -32,7 +31,7 @@ export default function FAQAccordian(props) {
         >
           <Typography className={classes.heading}>{props.question}</Typography>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails >
           <Typography align="left">{props.answer}</Typography>
         </AccordionDetails>
       </Accordion>
