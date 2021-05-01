@@ -12,6 +12,7 @@ import ArrowRightRoundedIcon from '@material-ui/icons/ArrowRightRounded';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '70%',
+    padding: theme.spacing(10, 5, 0),
   },
   text: {
     color:'#1D2E4E',  

@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
       // flexGrow: 1,
       textAlign: 'center',
-      padding: theme.spacing(10, 5, 10),
+      padding: theme.spacing(20, 5, 20),
       color: '#131C46',
     },
   }));
@@ -20,7 +20,12 @@ const AboutSection = () => {
     const classes = useStyles();
     
     return (
-      <Grid container className={classes.root} style={{margin:'auto', maxWidth:1300}}>
+      <Grid container 
+      spacing={0} 
+      // direction="column"
+      alignItems="center"
+      justify="center"
+      className={classes.root} style={{margin:'auto', maxWidth:1300}}>
       {/* <Grid container  style={{margin:'auto', backgroundColor:'white'}}> */}
       <Grid item xs align="center" style={{margin:'20px'}}>
 <SimpleCard m={50} style={{margin:'500px'}}

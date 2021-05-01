@@ -9,7 +9,8 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'center',
       padding: theme.spacing(5, 10, 1),
       backgroundColor: '#68BDCE',
-      color: '#f8f9fa'
+      color: '#f8f9fa',
+      margin: 'auto'
     },
     copyright: {
       padding: theme.spacing(4, 0, 2),
@@ -23,11 +24,9 @@ function Footer() {
     return (
 
         <div className={classes.root}>
-      <Grid container >
-        <Grid item md>
 <h1>Join our community to stay updated</h1>
 <Container maxWidth="sm">
-<Grid container >
+<Grid container maxWidth="md">
     <Grid item md style={{margin: "auto"}}>
     <IconButton aria-label="twitter" href="https://twitter.com/aisthisi_nft">
         <TwitterIcon/>
@@ -39,9 +38,7 @@ function Footer() {
     </IconButton>
     </Grid>
     </Grid>
-</Container>
-</Grid>
-      </Grid>
+ </Container>
       <p className={classes.copyright}>Aisthisi Copyright ⓒ {year}</p>
       </div>
 
