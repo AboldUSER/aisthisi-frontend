@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid, makeStyles, IconButton, Container } from '@material-ui/core';
 import TwitterIcon from '../images/contact-icons/twitter-icon';
 import DiscordIcon from '../images/contact-icons/discord-icon';
+import MediumIcon from '../images/contact-icons/medium-icon';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,6 +36,11 @@ function Footer() {
           <Grid item md style={{ margin: "auto" }}>
             <IconButton aria-label="discord" href="https://discord.gg/HNhDTMTAN7">
               <DiscordIcon />
+            </IconButton>
+          </Grid>
+          <Grid item md style={{ margin: "auto" }}>
+            <IconButton aria-label="medium" href="https://medium.com/aisthisi">
+              <MediumIcon />
             </IconButton>
           </Grid>
         </Grid>
