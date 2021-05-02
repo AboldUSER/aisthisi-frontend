@@ -47,10 +47,8 @@ const useStyles = makeStyles({
   },
   backgroundImageStyle: {
     height: '85vh',
-    "@media (max-width: 450px)": {
-      backgroundAttachment: "fixed",
-      backgroundPosition: " bottom",
-    }
+    backgroundPosition: "center bottom",
+    backgroundSize: 'cover'
   }
 });
 
@@ -59,10 +57,8 @@ const OverviewSection = () => {
 
   return (
     <Box my={10}>
-      <BackgroundImage src={Image} className={classes.backgroundImageStyle} transitionTime='2s'
-        style={{ position: 'relative', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom', backgroundSize: 'cover' }}
-      >
-        {/* <Box style={{ position: 'relative', opacity: '0.85', backgroundColor: '#ffffff', height: '85vh' }} /> */}
+      <BackgroundImage src={Image} className={classes.backgroundImageStyle} transitionTime='2s'>
+        <Box style={{ position: 'relative', opacity: '0.85', backgroundColor: '#ffffff', height: '85vh' }} />
         <Box className={classes.overviewBox} >
           <Typography style={{ fontSize: 80, color: '#1D2E4E', fontWeight: 'bold', fontFamily: 'Titillium Web' }}>Aisthisi</Typography>
           <Typography style={{ fontSize: 20, color: '#1D2E4E', fontFamily: 'Titillium Web' }}>Art + Blockchain + Olive Oil</Typography>
