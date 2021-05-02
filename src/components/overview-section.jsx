@@ -45,7 +45,7 @@ const useStyles = makeStyles({
   backgroundImageStyle: {
     height:'85vh',
     "@media (max-width: 450px)": {
-      height:'20vh',
+      background: "fixed bottom center"
   }
 }
 });
@@ -55,7 +55,7 @@ const OverviewSection = () => {
 
   return (
     <Box my={10}>
-      <BackgroundImage src={Image} height='85vh' transitionTime='2s'
+      <BackgroundImage src={Image} className={classes.backgroundImageStyle} transitionTime='2s'
         style={{ position: 'relative', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom', backgroundSize: 'cover' }}
       >
         <Box style={{ position: 'relative', opacity: '0.85', backgroundColor: '#ffffff', height: '85vh' }} />
