@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../images/olive-orchard.jpg';
+import Image from '../images/olive-orchard.jpeg';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
@@ -40,14 +40,18 @@ const useStyles = makeStyles({
     top: "30%",
     "@media (max-width: 450px)": {
       top: "20%",
+    },
+    "@media (max-width: 360px)": {
+      top: "10%",
     }
   },
   backgroundImageStyle: {
-    height:'85vh',
+    height: '85vh',
     "@media (max-width: 450px)": {
-      background: "fixed bottom center"
+      backgroundAttachment: "fixed",
+      backgroundPosition: " bottom",
+    }
   }
-}
 });
 
 const OverviewSection = () => {
