@@ -13,14 +13,17 @@ const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
         textAlign: 'center',
-        padding: theme.spacing(0, 5, 0),
+        padding: theme.spacing(0, 0, 0),
         color: '#1D2E4E',
         fontFamily: 'Titillium Web'
     },
     artistFaqTitle: {
         fontSize: 50,
         fontWeight: 'bold',
-        padding: theme.spacing(0, 0, 5),
+        padding: theme.spacing(0, 1, 5),
+        "@media (max-width: 400px)": {
+            fontSize: 40
+          }
     }
 }));
 
