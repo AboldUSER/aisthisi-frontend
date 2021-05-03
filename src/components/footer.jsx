@@ -29,17 +29,17 @@ function Footer() {
       <Container maxWidth="sm">
         <Grid container maxWidth="md">
           <Grid item md style={{ margin: "auto" }}>
-            <IconButton aria-label="twitter" href="https://twitter.com/aisthisi_nft">
+            <IconButton aria-label="twitter" target='_blank' href="https://twitter.com/aisthisi_nft">
               <TwitterIcon />
             </IconButton>
           </Grid>
           <Grid item md style={{ margin: "auto" }}>
-            <IconButton aria-label="discord" href="https://discord.gg/HNhDTMTAN7">
+            <IconButton aria-label="discord" target='_blank' href="https://discord.gg/HNhDTMTAN7">
               <DiscordIcon />
             </IconButton>
           </Grid>
           <Grid item md style={{ margin: "auto" }}>
-            <IconButton aria-label="medium" href="https://medium.com/aisthisi">
+            <IconButton aria-label="medium" target='_blank' href="https://medium.com/aisthisi">
               <MediumIcon />
             </IconButton>
           </Grid>

@@ -43,16 +43,13 @@ function debounce(fn, ms) {
 const StyledHeader = styled(AppBar)`
   display: flex;
   margin-bottom: 64px;
-  padding: 5px 16px 0px;
+  padding: 0px 16px 0px;
 `;
 
 const SiteNav = styled.div`
   display: flex;
   flex-grow: 1;
   align-items: center;
-  ${'' /* > * {
-    margin-right: 32px;
-  } */}
 `;
 
 const SiteNavLink = styled(Link).attrs({ component: NavLink })`
@@ -65,7 +62,6 @@ const SiteNavLink = styled(Link).attrs({ component: NavLink })`
 `;
 
 const StyledLogoWrapper = styled.div`
-        ${'' /* width: 260px; */}
         @media (max-width: 400px) {
           width: auto;
           marginRight: 260px; 
@@ -166,7 +162,6 @@ const Header = (props) => {
       <StyledHeader style={{ background: '#68bdce' }} zIndex="tooltip">
         <Toolbar>
           <Box display='flex' flexGrow={80}>
-
             <Link exact to='/'>
               <StyledLogoWrapper ><Logo /></StyledLogoWrapper>
             </Link>

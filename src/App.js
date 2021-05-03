@@ -14,10 +14,8 @@ const theme = createMuiTheme({
     MuiCssBaseline: {
       '@global': {
         body: {
-          background: 'rgb(255,255,255)',
-          background: 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,247,249,1) 35%, rgba(237,239,243,1) 100%)',
+          background: 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,247,249,1) 75%, rgba(237,239,243,1) 100%)',
           margin: 0,
-          /* background-color: #E6E9EF; */
           fontFamily: 'Titillium Web'
         },
       },

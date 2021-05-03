@@ -1,8 +1,7 @@
 import React, { useRef } from 'react';
 import Box from '@material-ui/core/Box';
-import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-// import CountDown from '../hooks/countdown'
+import {makeStyles} from '@material-ui/core/styles';
 import CountdownTimer from '../hooks/countdown-timer'
 
 const useStyles = makeStyles((theme) => ({
@@ -11,6 +10,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     color: '#1D2E4E',
     padding: theme.spacing(0, 0, 18),
+    "@media (max-width: 420px)": {
+      scrollMargin: "65px"
+    }
   },
   NFTTitle: {
     fontSize: 40,
@@ -22,9 +24,8 @@ const useStyles = makeStyles((theme) => ({
 
 const CollectionSection = () => {
   const classes = useStyles();
-  const myRef = useRef(null);
   return (
-    <Box className={classes.root} id='collection' my={5} ref={myRef}>
+    <Box className={classes.root} id='collection' my={5} >
       <Typography className={classes.NFTTitle}>NFT collection dropping this summer</Typography>
       <CountdownTimer />
     </Box>

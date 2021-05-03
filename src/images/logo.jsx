@@ -7,7 +7,7 @@ const StyledLogo = styled.span`
     display: flex;
     justify-content: center;
     margin: 0;
-    min-height: 100px;
+    min-height: 70px;
     min-width: 100px;
     padding: 0;
     text-decoration: none;
@@ -16,7 +16,7 @@ const StyledLogo = styled.span`
 function Logo() {
     return (
       <StyledLogo>
-        <a href='/'><img src={logo} height="50" style={{ marginTop: 4 }} /></a>
+        <a href='/'><img src={logo} alt="logo" height="50" style={{ marginTop: 4 }} /></a>
       </StyledLogo>
     )
   }

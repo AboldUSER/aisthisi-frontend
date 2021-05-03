@@ -9,7 +9,6 @@ import SimpleCard from './card';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    // flexGrow: 1,
     textAlign: 'center',
     padding: theme.spacing(20, 5, 20),
     color: '#131C46',

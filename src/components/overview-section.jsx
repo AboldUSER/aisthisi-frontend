@@ -5,30 +5,6 @@ import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
 import { BackgroundImage } from 'react-image-and-background-image-fade';
-// import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-
-// componentDidMount() {
-
-//   Events.scrollEvent.register('begin', function () {
-//     console.log("begin", arguments);
-//   });
-
-//   Events.scrollEvent.register('end', function () {
-//     console.log("end", arguments);
-//   });
-
-//   scrollTo() {
-//     scroller.scrollTo('scroll-to-element', {
-//       duration: 800,
-//       delay: 0,
-//       smooth: 'easeInOutQuart'
-//     })
-//   }
-
-//   componentWillUnmount() {
-//     Events.scrollEvent.remove('begin');
-//     Events.scrollEvent.remove('end');
-//   }
 
 const useStyles = makeStyles({
   root: {
@@ -53,15 +29,14 @@ const useStyles = makeStyles({
 });
 
 const scrollToCollection = () => {
-  document.getElementById('collection').scrollIntoView({behavior: "smooth"});
+  document.getElementById('collection').scrollIntoView({ behavior: "smooth", block:"start" });
 }
-
 
 const OverviewSection = () => {
   const classes = useStyles();
 
   return (
-    <Box my={10}>
+    <Box my={5}>
       <BackgroundImage src={Image} className={classes.backgroundImageStyle} transitionTime='2s'>
         <Box style={{ position: 'relative', opacity: '0.85', backgroundColor: '#ffffff', height: '85vh' }} />
         <Box className={classes.overviewBox} >

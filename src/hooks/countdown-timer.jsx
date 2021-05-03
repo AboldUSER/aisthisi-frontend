@@ -1,10 +1,9 @@
 import React from "react";
 import Countdown from "react-countdown";
-import Typography from '@material-ui/core/Typography';
-import { Grid, Container } from '@material-ui/core';
+import { Grid, Container, Typography } from '@material-ui/core';
 
 // Random component
-const Completionist = () => <span>NFT have dropped!</span>;
+const Completionist = () => <span style={{ fontFamily: 'Titillium Web', fontSize: 40, color: '#1D2E4E', fontWeight: 'bold' }}>NFT have dropped!</span>;
 
 // Renderer callback with condition
 const renderer = ({ days, hours, minutes, seconds, completed }) => {
