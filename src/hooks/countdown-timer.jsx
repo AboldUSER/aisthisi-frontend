@@ -1,7 +1,7 @@
 import React from "react";
 import Countdown from "react-countdown";
 import Typography from '@material-ui/core/Typography';
-import { Grid, makeStyles, IconButton, Container } from '@material-ui/core';
+import { Grid, Container } from '@material-ui/core';
 
 // Random component
 const Completionist = () => <span>NFT have dropped!</span>;

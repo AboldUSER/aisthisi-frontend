@@ -10,7 +10,7 @@ const HomePage = () => (
     <OverviewSection />
     <IntroSection />
     <AboutSection />
-    <CollectionSection id='collection'/>
+    <CollectionSection />
     </Box>
 );
 

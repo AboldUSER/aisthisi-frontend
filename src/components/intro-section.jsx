@@ -8,12 +8,14 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import { makeStyles } from '@material-ui/core/styles';
 import ArrowRightRoundedIcon from '@material-ui/icons/ArrowRightRounded';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    // width: '95%',
-    padding: theme.spacing(20, 0, 5)
+    width: '70%',
+    padding: theme.spacing(20, 0, 5),
+    "@media (max-width: 600px)": {
+      width: '95%'
+    }
   },
   text: {
     color: '#1D2E4E',
@@ -23,16 +25,9 @@ const useStyles = makeStyles((theme) => ({
 
 const IntroSection = () => {
   const classes = useStyles();
-  const matches = useMediaQuery('(min-width:400px)');
-  let componentWidth = ''
-  if (window.innerWidth > 600) {
-    componentWidth = '70%'
-  } else {
-    componentWidth = '95%'
-  }
 
   return (
-    <Container className={classes.root} style={{ maxWidth: componentWidth }}>
+    <Container className={classes.root} >
       <Paper elevation={3}>
         <Typography className={classes.text} variant="h6" style={{ fontSize: 30, padding: '10px 25px 0', textAlign: 'left' }} >
           The Idea

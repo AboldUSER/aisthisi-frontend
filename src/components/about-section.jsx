@@ -22,11 +22,9 @@ const AboutSection = () => {
   return (
     <Grid container
       spacing={0}
-      // direction="column"
       alignItems="center"
       justify="center"
       className={classes.root} style={{ margin: 'auto', maxWidth: 1300 }}>
-      {/* <Grid container  style={{margin:'auto', backgroundColor:'white'}}> */}
       <Grid item xs align="center" style={{ margin: '20px' }}>
         <SimpleCard m={50} style={{ margin: '500px' }}
           imageText={'Art'}
@@ -54,7 +52,6 @@ const AboutSection = () => {
           text2={'Certified organic extra-virgin crafted by traditional cold-press technique'}
         />
       </Grid>
-      {/* </Grid> */}
     </Grid>
   )
 }
