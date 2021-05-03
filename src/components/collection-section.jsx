@@ -24,7 +24,7 @@ const CollectionSection = () => {
   const classes = useStyles();
   const myRef = useRef(null);
   return (
-    <Box className={classes.root} my={5} id='collection' ref={myRef}>
+    <Box className={classes.root} id='collection' my={5} ref={myRef}>
       <Typography className={classes.NFTTitle}>NFT collection dropping this summer</Typography>
       <CountdownTimer />
     </Box>
