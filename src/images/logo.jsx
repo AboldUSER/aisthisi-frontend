@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from '../images/olive-branch.png';
+import logo from '../images/bottle-with-cluster.png';
 
 const StyledLogo = styled.span`
     align-items: center;
