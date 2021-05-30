@@ -5,6 +5,7 @@ import Ania from '../images/artists/Ania.jpg';
 import MajorArt from '../images/artists/MajorArt.jpg';
 import Stephan from '../images/artists/Stephan.jpg';
 import Will from '../images/artists/Will.jpg';
+import Metadr0n13 from '../images/artists/metadr0n13.png';
 import ArtistCard from './artist-card';
 
 
@@ -38,7 +39,7 @@ const ArtistInfoSection = () => {
       className={classes.root} style={{ margin: 'auto', maxWidth: 1300 }}>
       <Grid item xs align="center" style={{ margin: '20px' }}>
       <ArtistCard m={50} 
-          artistName='AG3030'
+          artistName='FrancisD.'
           artistCity='Phoenix'
           artistImage={AG3030}
           artistURL='https://linktr.ee/francisdayton'
@@ -46,7 +47,7 @@ const ArtistInfoSection = () => {
       </Grid>
       <Grid item xs align="center" style={{ margin: '20px' }}>
       <ArtistCard m={50} 
-          artistName='4ni4'
+          artistName='4ni4 Shestakova'
           artistCity='Moscow'
           artistImage={Ania}
           artistURL='https://linktr.ee/4ni4'
@@ -55,7 +56,7 @@ const ArtistInfoSection = () => {
       <Grid item xs align="center" style={{ margin: '20px' }}>
       <ArtistCard m={50} 
           artistName='Major Art'
-          artistCity='Sydney'
+          artistCity='Estonia'
           artistImage={MajorArt}
           artistURL='https://linktr.ee/majorart'
         />
@@ -74,6 +75,14 @@ const ArtistInfoSection = () => {
           artistCity='Paris'
           artistImage={Will}
           artistURL='https://www.instagram.com/rainingbodies'
+        />
+      </Grid>
+      <Grid item xs align="center" style={{ margin: '20px' }}>
+      <ArtistCard m={50} 
+          artistName='metadr0n13'
+          artistCity='Earth'
+          artistImage={Metadr0n13}
+          artistURL='https://www.instagram.com/metadr0n13'
         />
       </Grid>
     </Grid>
