@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(0, 1, 5),
         "@media (max-width: 400px)": {
             fontSize: 40
-          }
+        }
     }
 }));
 

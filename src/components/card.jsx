@@ -14,7 +14,7 @@ const useStyles = makeStyles({
         display: 'block',
         "@media (max-width: 400px)": {
             minWidth: 250
-          }
+        }
     },
     cardTitle: {
         color: '#1D2E4E',
