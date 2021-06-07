@@ -6,7 +6,9 @@ import MajorArt from '../images/artists/MajorArt.jpg';
 import Stephan from '../images/artists/Stephan.jpg';
 import Will from '../images/artists/Will.jpg';
 import Metadr0n13 from '../images/artists/metadr0n13.png';
+import Relativebalanz from '../images/artists/relativebalanz.jpg';
 import ArtistCard from './artist-card';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -67,6 +69,14 @@ const ArtistInfoSection = () => {
             artistCity='Earth'
             artistImage={Metadr0n13}
             artistURL='https://www.instagram.com/metadr0n13'
+          />
+        </Grid>
+        <Grid item xs align="center" style={{ margin: '20px' }}>
+          <ArtistCard m={50}
+            artistName='relativebalanz'
+            artistCity='Berlin'
+            artistImage={Relativebalanz}
+            artistURL='https://www.twitter.com/relativebalanz'
           />
         </Grid>
         <Grid item xs align="center" style={{ margin: '20px' }}>
